@@ -36,3 +36,8 @@ git clone https://github.com/<your-username>/mini-bhola-assistant.git
 cd mini-bhola-assistant bash
 ```
 
+### 2. 🐍 (Optional) Create Virtual Environment
+
+python -m venv .venv
+.venv/Scripts/activate  # Windows
+
