@@ -31,8 +31,8 @@ It can open websites, play music, and even answer questions using an AI API.
 
 ### 1. 📥 Clone the Repository
 
-```bash
+```
 git clone https://github.com/<your-username>/mini-bhola-assistant.git
-cd mini-bhola-assistant
+cd mini-bhola-assistant bash
+```
 
-###2. 🐍 (Optional) Create Virtual Environment
