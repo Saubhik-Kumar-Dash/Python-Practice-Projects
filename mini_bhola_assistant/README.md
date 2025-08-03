@@ -69,7 +69,7 @@ openai.api_key = "your-openai-api-key"
 
 ## 🎵 How to Set Up musicLibrary.py
 
-###Create a file called musicLibrary.py in the same folder as main.py.
+Create a file called musicLibrary.py in the same folder as main.py.
 
 ```
 music = {
@@ -105,12 +105,25 @@ Command: open youtube
 
 ## 📝 Notes
 
-  .🧠 AI output is both spoken and printed in the terminal
-  .🐌 Delay in voice response? → print() the response before speaking it:
+🧠 AI output is both spoken and printed in the terminal.
+🐌 Delay in voice response? → print() the response before speaking it:
 
   ```
   print(response)
   speak(response)
   ```
-  .🎙️ Speech-to-text is handled using SpeechRecognition
-  .🔈 Speech synthesis is done using gTTS and pygame
+🎙️ Speech-to-text is handled using SpeechRecognition
+🔈 Speech synthesis is done using gTTS and pygame
+
+## 🧪 Example AI Models
+
+| Provider   | Model Name        | Notes                  |
+| ---------- | ----------------- | ---------------------- |
+| OpenAI     | `gpt-3.5-turbo`   | Cheap + fast           |
+| OpenAI     | `gpt-4o`          | High-quality, paid     |
+| OpenRouter | `openrouter/auto` | Free + slower          |
+| Google AI  | `gemini-pro`      | Requires billing setup |
+
+
+"Bhola sunta hai... Bhola karta bhi hai." 😄
+— Happy Coding!
