@@ -38,6 +38,79 @@ cd mini-bhola-assistant bash
 
 ### 2. 🐍 (Optional) Create Virtual Environment
 
+```
 python -m venv .venv
 .venv/Scripts/activate  # Windows
+```
 
+### 3. 📦 Install Dependencies
+
+```
+pip install -r requirements.txt
+or
+pip install SpeechRecognition pyttsx3 gTTS pygame requests openai google-generativeai pyaudio pocketsphinx
+```
+
+## 🔑 Setup API Keys
+
+### ✅ Option 1: Free AI via OpenRouter
+
+```
+openai.api_key = "your-openrouter-api-key"
+openai.api_base = "https://openrouter.ai/api/v1"
+```
+
+### 💬 Option 2: ChatGPT (OpenAI)
+
+```
+openai.api_key = "your-openai-api-key"
+# No need to set api_base
+```
+
+## 🎵 How to Set Up musicLibrary.py
+
+###Create a file called musicLibrary.py in the same folder as main.py.
+
+```
+music = {
+    "despacito": "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
+    "shape of you": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+    "believer": "https://www.youtube.com/watch?v=7wtfhZwyrcc"
+}
+```
+
+## 💻 Example Voice Commands
+
+```
+"hello"                 → Wake word
+"open google"           → Opens Google
+"play believer"         → Opens YouTube with song
+"who is Elon Musk"      → AI will speak and print the answer
+```
+
+## 🚀 Run the Project
+
+```
+python main.py
+```
+
+## Output
+
+```
+Listening for wake word 'hello'...
+Detected: hello
+Listening for your command...
+Command: open youtube
+```
+
+## 📝 Notes
+
+  .🧠 AI output is both spoken and printed in the terminal
+  .🐌 Delay in voice response? → print() the response before speaking it:
+
+  ```
+  print(response)
+  speak(response)
+  ```
+  .🎙️ Speech-to-text is handled using SpeechRecognition
+  .🔈 Speech synthesis is done using gTTS and pygame
